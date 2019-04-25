@@ -25,7 +25,7 @@ class Form(QDialog):
 		if did[-1]=='\n':
 			did=did[:-1]
 		now = datetime.datetime.now()
-		command="SELECT * FROM Appointment WHERE Doctor_ID=\""+did+"\";"
+		command="SELECT * FROM Appointment WHERE doc_ID=\""+did+"\";"
 		print(command)
 		cur.execute(command)
 		res=cur.fetchall()
